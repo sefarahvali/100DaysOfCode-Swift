@@ -1,0 +1,26 @@
+
+// https://www.hackingwithswift.com/quick-start/beginners/how-to-store-whole-numbers
+
+
+let score = 11
+let reallyBig = 100000000
+//anlamak için altçizgi ile bölebiliriz.
+let reallyBig2 = 100_000_000
+
+
+var higherScore = score + 2
+var squaredScore = score * score
+print(higherScore)
+print(squaredScore)
+
+
+
+
+var counter = 11
+counter = counter + 5
+counter += 5
+print(counter)
+
+    //numara üçün katı mıdır ???
+let numara = 121
+print(numara.isMultiple(of: 3))
