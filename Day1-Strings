@@ -1,1 +1,35 @@
 
+
+//Kaynak : https://www.hackingwithswift.com/quick-start/beginners/how-to-create-strings
+
+// bir metni degiskene veya sabite yazi atama islemi yapmak istedigimizde string ifadesini kullaniriz.
+// emoji dahil
+let actor = "danzel washington"
+
+let result = "⭐️⭐️⭐️"
+print(result)
+
+let quote = "Then he tapped a sign saying \"Believe\" and walked away."
+print(quote)
+    //birden fazla satir deger yazmak icin 3tirnak kullaniriz.
+let movie = """
+A day in
+the life of an
+Apple engineer
+"""
+
+print(movie)
+    //stringin karakter sayisini ogrenelim. bosluklar da dahil edildi.
+print(movie.count)
+let boslukSayilirMi = " "
+print(boslukSayilirMi.count)
+let bosluk = boslukSayilirMi.count
+print(bosluk)
+    //icerigin hepsini buyuk harf yapar.
+let uppercase = movie.uppercased()
+print(uppercase)
+    //S ile baslayip baslamadigini gosterir.
+print(movie.hasPrefix("S"))
+print(movie.hasSuffix("engineer"))// bitimi gosterir.
+    //kucuk buyuk harf duyarliligi vardir.
+print(movie.hasSuffix("ENGINEER"))// bitimi gosterir.
