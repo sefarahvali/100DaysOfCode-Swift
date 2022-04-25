@@ -1,0 +1,20 @@
+
+// https://www.hackingwithswift.com/quick-start/beginners/how-to-store-decimal-numbers
+
+let number = 0.1 + 0.2
+print(number)
+
+
+let a = 1
+let b = 2.0
+// b'yi integer a dönüştürtük 
+let c = a+Int(b)
+    // veya a'yı Double(a) yapıp a değişkenini double'a çevirecektik.
+print(c)
+
+var name = "Sefa Rahvalı"
+var age = 27
+var d = name+" "+String(age)
+    //burada da integer'ı stringe çevirdik
+print(d)
+
