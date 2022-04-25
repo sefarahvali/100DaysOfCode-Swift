@@ -1,0 +1,27 @@
+Kaynak https://www.hackingwithswift.com/100/swiftui/1
+var greeting = "hello"
+print(greeting)
+
+
+var name = "Sefa"
+name = "Rifat"
+    //degiskenleri istedigimiz zaman degistirebildigimizi gosterir.
+print(name)
+
+    // degistirmek istemiyorsak constant kullaniriz 
+    // var yerine let 
+let char = "Rifat Sefa"
+    // let'in anlami char bugraya esit olsun
+    // var sefa degerini name degiskenine ata demektir.
+// char = "Bugra"
+print(char)
+
+
+var playerName = "Roy"
+print(playerName)
+
+playerName = "dani"
+print(playerName)
+
+playerName = "sam"
+print(playerName)
