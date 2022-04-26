@@ -1,0 +1,22 @@
+
+// https://www.hackingwithswift.com/quick-start/beginners/how-to-join-strings-together
+// stringleri birleştirmenin birden çok yolu vardır
+
+// 1. seçenek +
+let firstPart = "Hello, "
+let secondPart = "world!"
+let greeting = firstPart + secondPart
+print(greeting)
+// 2. seçenek ise : değişkenlere atamak
+//Değişkenlere atadığımızda ise \() içerisinde değişkenleri belirtmemiz gerekmektedir.
+let firstName = "Sefa"
+var lastName = "Rahvalı"
+let age = 27
+let message = "Hello, my name is \(firstName) and I'm \(age) years old."
+print(message)
+
+//String Interpolation'lara örnek vermek gerekirse
+
+var info = "\(firstName) \(lastName)"
+print(info)
+var alert = "Error: \(message)!"
