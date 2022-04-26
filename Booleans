@@ -1,0 +1,29 @@
+
+// https://www.hackingwithswift.com/quick-start/beginners/how-to-store-truth-with-booleans
+//let number = 120
+//print(number.isMultiple(of: 3))
+
+
+//let goodDogs = true
+//let gameOver = false
+
+// !degil
+var isAuthenticated = false
+print(isAuthenticated)
+isAuthenticated = !isAuthenticated
+print(isAuthenticated)
+isAuthenticated = !isAuthenticated
+print(isAuthenticated)
+print("----------")
+
+var gameover = false
+print(gameover)
+    // toggle değeri tersine çevirir.
+gameover.toggle()
+print(gameover)
+
+print("----------")
+print("boolean ornekleri")
+var animated = false
+var isReady = false
+//değer string bir ifade olamaz.
