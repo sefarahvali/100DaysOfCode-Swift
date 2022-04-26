@@ -1,0 +1,10 @@
+// Sabitlerin değiştirilemez.
+// Değişkenler değiştirilebilir değiştirilebilir.
+var name = "sefa"
+name.count
+    // değişkenin özelliklerini görebileceğimiz bir kaç adet fonksiyon öğrenildi. ör : count : değişken içerisinde kaç harf var.
+    // uppercase : değişken içerisindeki tüm harfleri büyükharfe çevirir.
+    //isMultiple(of:<Integer>)
+    // Ondalıklı sayıları double ile tanımlarız.
+    // 4 temel aritmetik operatörü,+ sadece sayıların toplamında değil de stringlerin birleştirilmesinde de kullanıldığını öğrendim.
+    
