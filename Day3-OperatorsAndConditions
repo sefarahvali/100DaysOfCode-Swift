@@ -1,0 +1,111 @@
+import UIKit
+
+var greeting = "Hello, playground"
+
+// https://www.hackingwithswift.com/sixty/3/1/arithmetic-operators
+
+//https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
+// our variables
+let firstScore = 14
+let secondScore = 6
+
+let total = firstScore + secondScore
+let difference = firstScore - secondScore
+
+print(total)
+print(difference)
+
+
+let score = 20
+let score2 = "5"
+
+var divisionWithConvert = score / Int(score2)!
+print(divisionWithConvert)
+//Operator oveloaging
+    // iki adet tamsayiyi toplayabiliriz, String tipleri ekleyebiliriz veya iki adet diziyi birbirine ekleyebiliriz.
+let first = ["Besiktas", "Galatasaray"]
+let second = ["Fenerbahce", "Trabzonspor"]
+let t = first + second
+print(t)
+
+//Compound assignment operators
+//tam sayılar için
+var puan = 90
+puan += 9
+print(puan)
+//stringler için
+var notlar = "The rain in Spain falls mainly on the"
+notlar += "Spaniards"
+print(notlar)
+
+
+// Comparison operators
+// değişkenlerin birbirine eşit ==,!= olup olmadığını,
+// <,<=,>,>=
+let s1 = 10
+let s2 = 5
+
+s1 == s2
+s2<s1
+
+
+// Conditions
+let firstCard = 1
+let secondCard = 1
+
+if firstCard + secondCard == 2 {
+    print("Lucky!")
+}
+else if firstCard + secondCard == 21 {
+    print("Blackjack!")
+}else {
+    print("Regular cards")
+}
+let isAvailable: Bool = false
+if isAvailable {
+    print("Success")
+} else {
+    print("Failure")
+}
+
+// combining operators
+// iki koşulu birleştirip koşul işlemi yapıyoruz
+// && ve
+// || veya
+
+let age1 = 21
+let age2 = 12
+if age1 > 20 && age2<=13 {
+    print("age1 20'den büyük ve age2 13'e eşit veya 13'ten küçük")
+}
+//ternary operators
+// if else'in tek satırda yazabildiğimiz yazı biçimi
+var firstnum = 11
+var secondnum = 10
+
+var ternary = firstnum == secondnum ? "numaralar aynıdır." : "numaralar aynı değildir."
+
+var singers = ["Taylor Swift"]
+// singers değişkeni bir dizidir.
+// dizilerin elemanlarının index'i 0dan başlar. 0,1,2,3,4
+// singers dizisinin 0. indexi "Taylor Swift" ise sonucu Success olarak bize döndürecektir.
+print(singers[0] == "Taylor Swift" ? "Success" : "Failure")
+// range operators
+// üç noktalılarda ilk sayıdan başlar son sayı dahil olacak şekilde döngüsünü tamamlar.
+for i in 1...5{
+print(i*5)
+}
+
+// iki noktalılar son döngüyü dahil etmez
+let names = ["Anna", "Alex", "Brian", "Jack"]
+let namesCount = names.count
+for i in 0..<namesCount{
+print(" \(i+1) - \(names[i]) ")
+}
+
+var names2 = ["Piper", "Alex", "Suzanne", "Gloria","kitura"]
+print(names2[0])
+print(names2[1...3])
+// Burada names2 dizisinin 1. indexinden başlayıp 3. indexini de dahil ederek çıktı alır.
+// eğer ikinci indexinden başlayıp son indexine kadar yazdırmak istersek aşağıdaki gibi belirtmek gerekecektir.
+print(names2[2...])
