@@ -1,0 +1,59 @@
+import UIKit
+
+// fonksiyonlar tekrar tekrar yazmak istemediğimiz komutlar için bize sunulan kolaylıktır.
+
+// input funksiyonlarda çıktı döndürmez - void
+func sumFunc(x:Int,y:Int){
+    print(x+y)
+}
+sumFunc(x: 5, y: 4)
+sumFunc(x: 7, y: 2)
+sumFunc(x: 1, y: 7)
+// fonksiyonu çağırmadığımız sürece oluşturduğumuz fonksiyon çalışmayacaktır.
+
+
+//output -> return yapar
+//parantezlerin içerisindeki <parametreler> için mutlaka türü belirtelim.
+func walkDogs(destination: String) {
+print("Let's go for a walk to \(destination).")
+}
+walkDogs(destination: "the park")
+
+func age(to ageDegisken : Int){
+    print("age, \(ageDegisken)")
+}
+// to - ageDegisken i temsil eder.
+// fonksiyonun içerisinde ageDegisken larak kullanırız.
+age(to: 27)
+
+
+func sumFunc2(x:Int,y:Int)->Int{
+    return x+y
+}
+let intTuruDondurenFonksiyon = sumFunc2(x: 4, y: 3)
+print(intTuruDondurenFonksiyon)
+
+
+func printHelp() {
+    let message = """
+Welcome to MyApp!
+
+Run this app inside a directory of images and
+MyApp will resize them all into thumbnails
+"""
+
+    print(message)
+}
+printHelp()
+
+
+func hey(_ name:String){
+    print("Hello : \(name)!")
+}
+
+hey("Sefa")
+func hey2(_ name:String,_ age:Int){
+    print("Hello! My name is \(name), my age \(age)")
+}
+
+hey2("Sefa", 27)
