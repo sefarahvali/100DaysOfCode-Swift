@@ -1,0 +1,65 @@
+import UIKit
+
+var greeting = "Hello, playground"
+
+
+// döngüler
+
+// For döngüsü
+// döngüler kümelerde olmaz
+// string olmaz
+// dizileri değikene atarız
+
+let count = 1...10
+for n in count {
+    print("Sayı : \(n)")
+}
+let albums = ["Red", "1989", "Reputation"]
+//albums dizisinin içerisindeki elemanları al
+// döngü içerisinde atadığımız album değişkenine ata
+for album in albums {
+    // album değişkenlerini tek tek yazdır.
+    // albums elemanlarının sayısı kadar.
+    print("\(album) is on Apple Music")
+}
+
+
+// sabit  kullanmazsak
+for _ in 1...3{
+    print("calismalar")
+    //1
+    //2
+    //3
+}
+
+for _ in 1..<3{
+    print("sayi")
+    //1
+    //2
+}
+
+//while Loop
+var myNumber = 0
+while myNumber < 10 {
+    print("sayi\(myNumber)")
+    myNumber += 10
+}
+var countDownn = 10
+while countDownn >= 0 {
+    print(countDownn)
+
+    if countDownn == 4 {
+        print("I'm bored. Let's go now!")
+        //break
+        
+    }
+
+    countDownn -= 1
+}
+
+for i in 1...10 {
+    for j in 1...10 {
+        let product = i * j
+        print ("\(i) * \(j) is \(product)")
+    }
+}
